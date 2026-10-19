@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sujeesh ♥ Linsha — Happy Anniversary</title>
+    <meta name="description" content="A gift from your family — celebrating a love story worth remembering." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Caveat:wght@400;600&family=Nunito:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <!-- ========== OPENING ========== -->
+    <div id="opening" class="opening" role="dialog" aria-modal="true" aria-label="Open your anniversary gift">
+        <div class="opening__envelope">
+            <div class="opening__flap"></div>
+            <div class="opening__letter">
+                <p class="opening__eyebrow">From your family, with love</p>
+                <h1 class="opening__names">Sujeesh <span>♥</span> Linsha</h1>
+                <p class="opening__hint">Tap to open your gift</p>
+            </div>
+        </div>
+        <button id="openBtn" class="opening__btn" type="button">Open with love</button>
+    </div>
+
+
+    <!-- ========== HERO ========== -->
+    <header class="hero" id="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+
+        <div class="hero__content reveal">
+            <p class="hero__eyebrow" id="heroEyebrow">
+                Happy Anniversary
+            </p>
+
+            <h1 class="hero__names">
+                Sujeesh <span class="hero__heart">♥</span> Linsha
+            </h1>
+
+            <p class="hero__quote" id="heroQuote"></p>
+
+            <p class="hero__scroll" id="heroScroll">
+                Scroll to begin
+            </p>
+        </div>
+
+        <div class="floating-hearts" aria-hidden="true"></div>
+    </header>
+
+
+    <!-- ========== TIMER ========== -->
+    <section class="section timer-section" id="timer">
+        <div class="container">
+            <h2 class="section__title reveal">Married for … and counting</h2>
+            <p class="section__subtitle reveal">every single second, a little more love</p>
+
+            <div class="timer-grid reveal" id="timerGrid" aria-live="polite">
+                <div class="timer-unit"><span class="timer-unit__value" id="t-years">00</span><span
+                        class="timer-unit__label">Years</span></div>
+                <div class="timer-unit"><span class="timer-unit__value" id="t-months">00</span><span
+                        class="timer-unit__label">Months</span></div>
+                <div class="timer-unit"><span class="timer-unit__value" id="t-days">00</span><span
+                        class="timer-unit__label">Days</span></div>
+                <div class="timer-unit"><span class="timer-unit__value" id="t-hours">00</span><span
+                        class="timer-unit__label">Hours</span></div>
+                <div class="timer-unit"><span class="timer-unit__value" id="t-minutes">00</span><span
+                        class="timer-unit__label">Minutes</span></div>
+                <div class="timer-unit"><span class="timer-unit__value" id="t-seconds">00</span><span
+                        class="timer-unit__label">Seconds</span></div>
+            </div>
+
+            <div class="stats-row reveal">
+                <div class="stat"><span class="stat__value" id="stat-days">0</span><span class="stat__label">Days
+                        Together</span></div>
+                <div class="stat"><span class="stat__value" id="stat-weekends">0</span><span
+                        class="stat__label">Weekends Shared</span></div>
+                <div class="stat"><span class="stat__value" id="stat-hours">0</span><span class="stat__label">Hours of
+                        Love</span></div>
+                <div class="stat"><span class="stat__value">∞</span><span class="stat__label">Memories Made</span></div>
+            </div>
+
+            <p class="timer-section__since reveal">Since 20 October 2013 — and every day since</p>
+        </div>
+    </section>
+
+    <!-- ========== TIMELINE ========== -->
+    <section class="section timeline-section" id="timeline">
+        <div class="container">
+            <h2 class="section__title reveal">The Story of Us</h2>
+            <p class="section__subtitle reveal">scroll slowly — this is how your love story happened</p>
+            <div class="timeline" id="timelineList"></div>
+        </div>
+    </section>
+
+    <!-- ========== THEN & NOW ========== -->
+    <section class="section then-now-section" id="then-now">
+        <div class="container">
+            <h2 class="section__title reveal">Then &amp; Now</h2>
+            <p class="section__subtitle reveal">same smile — deeper love</p>
+
+            <div class="compare reveal" id="compare">
+                <img class="compare__img compare__img--before" src="assets/images/then.jpg"
+                    alt="Sujeesh and Linsha then" />
+                <div class="compare__after-wrap" id="compareAfterWrap">
+                    <img class="compare__img compare__img--after" src="assets/images/now.jpg"
+                        alt="Sujeesh and Linsha now" />
+                </div>
+                <div class="compare__handle" id="compareHandle" role="slider" aria-label="Drag to compare then and now"
+                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+                    <span class="compare__handle-line"></span>
+                    <span class="compare__handle-circle">⇄</span>
+                </div>
+                <span class="compare__label compare__label--left">Then</span>
+                <span class="compare__label compare__label--right">Now</span>
+            </div>
+
+            <p class="compare__hint reveal">Drag the slider ⇄</p>
+        </div>
+    </section>
+
+    <!-- ========== FAMILY ALBUM ========== -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section__title reveal">Our Family Album</h2>
+            <p class="section__subtitle reveal">a few of our most treasured moments together</p>
+            <div class="gallery-grid reveal" id="galleryGrid"></div>
+        </div>
+    </section>
+
+    <!-- ========== THINGS WE LOVE ========== -->
+    <section class="section reasons-section" id="reasons">
+        <div class="container">
+            <h2 class="section__title reveal">Things We Love About You</h2>
+            <p class="section__subtitle reveal">tap each note — they are all true</p>
+            <div class="reasons-grid" id="reasonsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ========== FAMILY LETTER (inline, one-by-one reveal) ========== -->
+    <section class="section letter-section" id="letter">
+        <div class="container">
+            <h2 class="section__title reveal">A Letter From Your Family</h2>
+            <p class="section__subtitle reveal">read it slowly — every word is true</p>
+            <div class="letter-body" id="letterBody" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <!-- ========== SON'S VOICE NOTE ========== -->
+    <section class="section voice-section" id="voice">
+        <div class="container">
+            <h2 class="section__title reveal">A Voice Note From Your Son</h2>
+            <p class="section__subtitle reveal">press play — listen with your heart</p>
+            <div id="voiceNotesList" class="voice-notes"></div>
+        </div>
+    </section>
+
+    <!-- ========== WISHES ========== -->
+    <section class="section promises-section" id="wishes">
+        <div class="container">
+            <h2 class="section__title reveal">Our Wishes For You</h2>
+            <p class="section__subtitle reveal">open one wish at a time…</p>
+            <div class="promises-grid" id="promisesGrid"></div>
+        </div>
+    </section>
+
+    <!-- ========== COUNTDOWN ========== -->
+    <section class="section countdown-section" id="countdown-section">
+        <div class="container">
+            <h2 class="section__title reveal" id="countdownTitle">Next wedding anniversary in</h2>
+            <p class="section__subtitle reveal" id="countdownSubtitle">mark the calendar — a celebration is coming</p>
+            <div class="countdown reveal" id="countdown" aria-live="polite">
+                <div class="countdown-unit"><span class="countdown-unit__value" id="cd-days">00</span><span
+                        class="countdown-unit__label">Days</span></div>
+                <div class="countdown-unit"><span class="countdown-unit__value" id="cd-hours">00</span><span
+                        class="countdown-unit__label">Hours</span></div>
+                <div class="countdown-unit"><span class="countdown-unit__value" id="cd-minutes">00</span><span
+                        class="countdown-unit__label">Minutes</span></div>
+                <div class="countdown-unit"><span class="countdown-unit__value" id="cd-seconds">00</span><span
+                        class="countdown-unit__label">Seconds</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CLOSING ========== -->
+    <footer class="closing" id="closing">
+        <div class="container">
+            <h2 class="closing__title reveal">Here’s to you — and to forever.</h2>
+            <p class="closing__text reveal">Every year with you is a blessing. Thank you for being our home.</p>
+            <p class="closing__names reveal">Sujeesh &amp; Linsha, always.</p>
+            <p class="closing__credit reveal">Made with love by your family.</p>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+
+</html>

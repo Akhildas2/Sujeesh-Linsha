@@ -1,0 +1,47 @@
+:root {
+    /* ---------- Rose-gold palette ---------- */
+    --rose-primary: #b76e79;
+    --rose-deep: #9c5a64;
+    --rose-light: #e8b4b8;
+    --blush: #f9e0e3;
+    --champagne: #f3e1d3;
+    --ivory: #fffaf5;
+    --cream: #fdf6f0;
+    --gold: #d4af37;
+    --gold-soft: #e8d5a3;
+
+    /* ---------- Text ---------- */
+    --text-primary: #4b2835;
+    --text-muted: #876a73;
+    --text-light: #fffaf5;
+
+    /* ---------- Backgrounds ---------- */
+    --bg-body: #fffaf5;
+    --bg-section-alt: #fdf1ee;
+    --bg-dark: #2e1a21;
+
+    /* ---------- Borders & shadows ---------- */
+    --border-subtle: rgba(183, 110, 121, 0.18);
+    --shadow-soft: 0 8px 30px rgba(75, 40, 53, 0.08);
+    --shadow-card: 0 16px 50px rgba(75, 40, 53, 0.12);
+    --shadow-gold: 0 0 30px rgba(212, 175, 55, 0.25);
+
+    /* ---------- Typography ---------- */
+    --font-display: "Great Vibes", cursive;
+    --font-hand: "Caveat", cursive;
+    --font-body: "Nunito", ui-sans-serif, system-ui, sans-serif;
+
+    /* ---------- Radii ---------- */
+    --radius-card: 20px;
+    --radius-large: 28px;
+    --radius-pill: 999px;
+
+    /* ---------- Motion ---------- */
+    --ease-romantic: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ---------- Layout ---------- */
+    --section-spacing: clamp(3rem, 8vw, 7rem);
+    --container-width: 1100px;
+    --container-narrow: 780px;
+}

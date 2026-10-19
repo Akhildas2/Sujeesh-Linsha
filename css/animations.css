@@ -1,0 +1,72 @@
+@keyframes floatY {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes heartFloat {
+  0% {
+    transform: translateY(0) scale(0.6);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(-120px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.floating-hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floating-hearts::before,
+.floating-hearts::after {
+  content: "♥";
+  position: absolute;
+  bottom: -20px;
+  font-size: 1.2rem;
+  color: var(--rose-light);
+  opacity: 0;
+  animation: heartFloat 6s ease-in infinite;
+}
+
+.floating-hearts::before {
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.floating-hearts::after {
+  left: 75%;
+  animation-delay: 3s;
+  font-size: 0.9rem;
+}
+
+@keyframes softGlow {
+
+  0%,
+  100% {
+    box-shadow: var(--shadow-card);
+  }
+
+  50% {
+    box-shadow: 0 0 60px rgba(212, 175, 55, 0.35);
+  }
+}
+
+.countdown-section.is-celebrating .celebration {
+  animation: softGlow 3s ease-in-out infinite;
+}
